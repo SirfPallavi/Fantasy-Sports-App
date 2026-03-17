@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spin the Wheel Game</title>
+    <link rel="stylesheet" href="sstyles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Gaming<span class="highlight">Zone</span></div>
+      <ul class="nav-links">
+        <li><a href="./index.html">Aviator</a></li>
+        <li><a href="./spin.html">Spin</a></li>
+      </ul>
+      <div class="wallet">
+        <i class="wallet-icon">&#128179;</i>
+        <!-- Changed to a wallet emoji -->
+        <span class="currency" id="nav_wallet"></span>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>Spin the Wheel Game</h1>
+      <p>Wallet: ₹<span id="wallet-amount"></span></p>
+      <div id="wheel-container">
+        <canvas id="wheel" width="500" height="500"></canvas>
+        <button id="spin-btn">Spin (Cost ₹10)</button>
+      </div>
+      <p id="result"></p>
+    </div>
+
+    <script src="sscript.js"></script>
+  </body>
+</html>
